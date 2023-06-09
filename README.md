@@ -1,8 +1,17 @@
 # RapidEvolutionNTP
 
-RapidPla.c
-
-
-In this project, we use Monte Carlo simulations and analytical approximations to investigate the mechanisms underlying the rapid evolution of phenotypic plasticity in a two-locus epistatic model of plasticity in population pairs inhabiting patchy habitats (adapted-maladapted). We examine the evolution at the phenotypic plasticity modifier locus and at the directly selected (target) locus, whose effect is modified by the plasticity locus, across a wide range of parameter combination.
-
-Frequency based forward-in-time simulation. This is a two-loci two population model where before the TIME generation starts any of the population is being hit by random mutation once. After being hit by the mutation, each sub-population receives new mutant both in target and plastic locus where the sub-population size is N1 & N2 respectively. Then the population undergoes migration, selection, recombination and reproduction. Please edit "parameters" section to set above parameters as well as N1 (sub-population 1), N2 (sub-population 2), REP ( 100N, number of replicate simulations & N = N1+N2), interval (interval between migration occurs in generation), NMU (mutation rate), MIGS (migrants between the population), sel (selective pressure), REC (recombination rate), pla (relative strength of plasticity, 0-1).  The TIME is simulation time set at 100N generations to confirm that population achieves polymorphism. The heterozygosity both in target & plastic locus, average fixation & lost time for both target & plastic locus & probability of fixation time for both target & plastic locus are reported in the 'output' file. This program requires an input file 'pars1' which contains all the parameters which is mentioned above. A sample parameter file is provided.
+This code simulates evolutionary dynamics at a two-loci, plasticity modifier and a structural locus, in a subdivided population (deme 1 and deme 2) over a patchy (spatially heterogenous) habitat, forward in time as described in Promy et al 2023. The program requires an input file “pars1” which contains a single entry (separated by enter) for each of:
+N1 – size of deme1
+N2 - size of deme2
+TIME - simulation time (100N where N = N1 + N2)
+REP - number of replicates (100N)
+interval - interval between migration occurs in generation
+NMU - mutation rate
+MIGS - migrants between the demes
+sel - selective pressure
+REC - recombination rate
+pla - relative strength of plasticity, 0-1
+sigma - randomness of selective pressure
+A sample pars1 is provided.
+Output for the runs is given in “out2” and reports:
+size of deme 1 & 2, migrants, selective pressure in the environment of deme 1 & 2, relative strength of plastisity in ancestral and derived allele of deme 1 & 2, heterozygosity of target & plastic loci, average fixation time of target & plastic loci, average loss time of target & plastic loci, probability of fixation time of target & plastic loci.
