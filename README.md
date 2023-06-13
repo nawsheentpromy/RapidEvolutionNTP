@@ -14,4 +14,4 @@ pla - relative strength of plasticity, 0-1 <br>
 sigma - randomness of selective pressure <br>
 A sample pars1 is provided.<br>
 Output for the runs is given in “out2” and reports: <br>
-size of deme 1 & 2, migrants, selective pressure in the environment of deme 1 & 2, relative strength of plastisity in ancestral and derived allele of deme 1 & 2, heterozygosity of target & plastic loci, average fixation time of target & plastic loci, average loss time of target & plastic loci, probability of fixation time of target & plastic loci.
+size of deme 1 & 2,<br> migrants,<br> selective pressure in the environment of deme 1 & 2,<br> relative strength of plastisity in ancestral and derived allele of deme 1 & 2,<br> heterozygosity of target & plastic loci, average fixation time of target & plastic loci,<br> average loss time of target & plastic loci, <br> probability of fixation time of target & plastic loci.<br>
